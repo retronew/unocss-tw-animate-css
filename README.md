@@ -4,7 +4,7 @@ A collection of UnoCSS utilities for creating beautiful animations tailored for 
 
 ---
 
-This package serves as an animate preset for UnoCSS, leveraging a CSS-first approach to provide animation capabilities without relying on legacy JavaScript plugins.
+This package serves as an animation preset for UnoCSS, leveraging a CSS-first approach to provide animation capabilities without relying on legacy JavaScript plugins.
 
 ## Table of Contents
 
@@ -28,10 +28,19 @@ This package serves as an animate preset for UnoCSS, leveraging a CSS-first appr
    pnpm install -D unocss-tw-animate-css
    ```
 
-2. Add the following line to your `app.css` or `globals.css` file:
+2. Add the preset to your UnoCSS configuration file (typically `uno.config.ts` or similar):
 
-   ```css
-   @import "unocss-tw-animate-css";
+   ```javascript
+   import { defineConfig } from 'unocss';
+   import presetTwAnimate from 'unocss-tw-animate-css';
+
+   export default defineConfig({
+     presets: [
+       presetTwAnimate(),
+       // other presets...
+     ],
+     // other configurations...
+   });
    ```
 
 3. Start using the animations in your HTML:
