@@ -32,7 +32,7 @@ This package serves as an animation preset for UnoCSS, leveraging a CSS-first ap
 
    ```javascript
    import { defineConfig } from 'unocss';
-   import presetTwAnimate from 'unocss-tw-animate-css';
+   import { presetTwAnimate } from 'unocss-tw-animate-css';
 
    export default defineConfig({
      presets: [
