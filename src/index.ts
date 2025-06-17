@@ -366,7 +366,7 @@ function createSlideRules(type: 'in' | 'out'): Rule[] {
   ] as const
 }
 
-export default definePreset(() => {
+export const presetTwAnimate = definePreset(() => {
   return {
     name: 'tw-animate',
     preflights: [
