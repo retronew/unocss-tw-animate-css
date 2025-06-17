@@ -1,7 +1,7 @@
 {
   "name": "unocss-tw-animate-css",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@10.6.2",
   "description": "UnoCSS's animate preset for Wind4",
   "author": "retronew <https://github.com/retronew>",
